@@ -30,27 +30,27 @@
                         </connections>
                     </switch>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27l-8l-ter">
-                        <rect key="frame" x="80" y="10" width="409" height="21"/>
+                        <rect key="frame" x="20" y="10" width="469" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-St-Kme">
-                        <rect key="frame" x="80" y="41" width="409" height="16"/>
+                        <rect key="frame" x="20" y="41" width="469" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="27l-8l-ter" firstAttribute="leading" secondItem="N17-7X-1Q3" secondAttribute="leading" constant="20" id="4c9-tJ-UHZ"/>
                     <constraint firstItem="l5m-a9-bkM" firstAttribute="centerY" secondItem="N17-7X-1Q3" secondAttribute="centerY" id="6Ln-dF-2J9"/>
                     <constraint firstItem="l5m-a9-bkM" firstAttribute="leading" secondItem="27l-8l-ter" secondAttribute="trailing" constant="10" id="9z5-sC-uJo"/>
                     <constraint firstItem="DMx-St-Kme" firstAttribute="top" secondItem="27l-8l-ter" secondAttribute="bottom" constant="10" id="ACz-1z-Kag"/>
-                    <constraint firstItem="DMx-St-Kme" firstAttribute="leading" secondItem="V39-Yk-1RE" secondAttribute="trailing" constant="10" id="Eqw-if-uIV"/>
                     <constraint firstItem="l5m-a9-bkM" firstAttribute="leading" secondItem="DMx-St-Kme" secondAttribute="trailing" constant="10" id="Gxl-AV-QAx"/>
-                    <constraint firstItem="27l-8l-ter" firstAttribute="leading" secondItem="V39-Yk-1RE" secondAttribute="trailing" constant="10" id="SPq-He-aCl"/>
                     <constraint firstAttribute="bottom" secondItem="V39-Yk-1RE" secondAttribute="bottom" constant="10" id="Uf2-mN-dK7"/>
                     <constraint firstItem="27l-8l-ter" firstAttribute="top" secondItem="N17-7X-1Q3" secondAttribute="top" constant="10" id="Vel-aE-zbg"/>
+                    <constraint firstItem="DMx-St-Kme" firstAttribute="leading" secondItem="N17-7X-1Q3" secondAttribute="leading" constant="20" id="axM-qa-1ig"/>
                     <constraint firstItem="V39-Yk-1RE" firstAttribute="leading" secondItem="N17-7X-1Q3" secondAttribute="leading" constant="20" id="kKV-MF-DUO"/>
                     <constraint firstAttribute="trailing" secondItem="l5m-a9-bkM" secondAttribute="trailing" constant="20" id="vfD-PM-eO5"/>
                     <constraint firstItem="V39-Yk-1RE" firstAttribute="top" secondItem="N17-7X-1Q3" secondAttribute="top" constant="10" id="vvS-s6-PAK"/>
