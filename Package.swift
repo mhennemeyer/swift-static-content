@@ -15,7 +15,7 @@ let package = Package(
             targets: ["swift-static-content"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/mhennemeyer/swift-toolbox", from: "2.0.0"),
+        .package(url: "https://github.com/mhennemeyer/swift-toolbox", from: "2.0.3"),
         .package(url: "https://github.com/mhennemeyer/swift-crayons", from: "1.0.4")
     ],
     targets: [

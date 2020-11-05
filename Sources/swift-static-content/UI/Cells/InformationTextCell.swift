@@ -10,7 +10,6 @@ class InformationTextCell: UITableViewCell, InformationCell {
         multilineLabel.text = informationItem.text
         let interactive = informationItem.isActionable
         let highlight = informationItem.isHighlight
-        let hasAction = informationItem.hasAction
         accessoryType = interactive ? .disclosureIndicator : .none
         selectionStyle = interactive ? .default : .none
         multilineLabel.font = highlight ? multilineLabel.font.withWeight(.bold) : multilineLabel.font.withWeight(.regular)
