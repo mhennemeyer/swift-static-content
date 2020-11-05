@@ -2,7 +2,7 @@ import UIKit
 import swift_toolbox
 import swift_crayons
 
-class InformationUIViewController: UITableViewController, InformationViewController {
+public class InformationUIViewController: UITableViewController, InformationViewController {
     
     static func ctrl(entryItem: InformationItem) -> InformationUIViewController {
         let ctrl = InformationUIViewController.fromStoryboard(bundle: Bundle.module)
@@ -14,7 +14,7 @@ class InformationUIViewController: UITableViewController, InformationViewControl
     
     // MARK: - Life cycle
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         self.title = navigationTitle
         tableView.register(InformationTextCell.nib(Bundle.module), forCellReuseIdentifier: InformationTextCell.nibName)
@@ -32,7 +32,7 @@ class InformationUIViewController: UITableViewController, InformationViewControl
         tableView.tintColor = Crayon.secondaryColor
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         Crayon.colorize(view: view)
         Crayon.colorize(bar: navigationController?.navigationBar)
@@ -56,33 +56,33 @@ class InformationUIViewController: UITableViewController, InformationViewControl
     
     // MARK: - TableView
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    public override func numberOfSections(in tableView: UITableView) -> Int {
         informationSections.count
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         informationSection(index: section).items.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         InformationCells.cell(tableView: tableView, informationItem: informationItem(for: indexPath))
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         informationSection(index: section).title
     }
     
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         Crayon.colorize(cell: cell)
     }
     
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    public override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
             headerView.textLabel?.textColor = Crayon.secondaryColor
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let item = informationItem(for: indexPath)
         
@@ -102,7 +102,7 @@ class InformationUIViewController: UITableViewController, InformationViewControl
     
     // MARK: - Key Commands
     
-    override var keyCommands: [UIKeyCommand]? {
+    public override var keyCommands: [UIKeyCommand]? {
         var commands = [UIKeyCommand]()
         
         commands.append(
