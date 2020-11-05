@@ -14,7 +14,8 @@ class InformationSwitchCell: UITableViewCell, InformationCell {
         self.informationItem = informationItem
         titleLabel.text = informationItem.title
         subtitleLabel.text = informationItem.subtitle
-        iconView.image = informationItem.image
+        //iconView.image = informationItem.image
+        imageView?.image = informationItem.image
         aSwitch.isOn = (informationItem.switch?.isOn ?? false)
         
         let interactive = informationItem.isActionable
