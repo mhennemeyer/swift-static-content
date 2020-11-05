@@ -17,7 +17,7 @@ class InformationSwitchCell: UITableViewCell, InformationCell {
         //iconView.image = informationItem.image
         imageView?.image = informationItem.image
         aSwitch.isOn = (informationItem.switch?.isOn ?? false)
-        
+        aSwitch.isEnabled = (informationItem.switch?.isEnabled ?? true)
         let interactive = informationItem.isActionable
         accessoryType = interactive ? .disclosureIndicator : .none
         selectionStyle = interactive ? .default : .none
