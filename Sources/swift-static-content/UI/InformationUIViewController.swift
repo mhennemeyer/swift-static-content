@@ -7,7 +7,7 @@ public class InformationUIViewController: UITableViewController, InformationView
     public static func ctrl(entryItem: InformationItem) -> InformationUIViewController {
         let ctrl = InformationUIViewController.fromStoryboard(bundle: .module, name: nil)
         ctrl.entryItem = entryItem
-        return ctrl
+        return ctrl  
     }
     
     var entryItem: InformationItem!
