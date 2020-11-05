@@ -1,7 +1,7 @@
 import UIKit
 
 public struct InformationItem {
-    public init(title: String? = nil, subtitle: String? = nil, text: String? = nil, imageKey: String? = nil, details: [InformationSection]? = nil, aswitch: InformationSwitch? = nil, actionKey: String? = nil, highlight: Bool? = false) {
+    public init(title: String? = nil, subtitle: String? = nil, text: String? = nil, imageKey: String? = nil, details: [InformationSection]? = nil, switch aswitch: InformationSwitch? = nil, actionKey: String? = nil, highlight: Bool? = false) {
         self.title = title
         self.subtitle = subtitle
         self.text = text
