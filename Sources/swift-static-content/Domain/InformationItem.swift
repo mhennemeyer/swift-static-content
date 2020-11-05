@@ -1,6 +1,6 @@
 import UIKit
 
-struct InformationItem {
+public struct InformationItem {
     var title: String? = nil
     var subtitle: String? = nil
     var text: String? = nil
