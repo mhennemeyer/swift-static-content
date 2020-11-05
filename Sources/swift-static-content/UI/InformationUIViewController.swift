@@ -5,7 +5,7 @@ import swift_crayons
 public class InformationUIViewController: UITableViewController, InformationViewController {
     
     public static func ctrl(entryItem: InformationItem) -> InformationUIViewController {
-        let ctrl = InformationUIViewController.fromStoryboard(bundle: .module)
+        let ctrl = InformationUIViewController.fromStoryboard(bundle: .module, name: nil)
         ctrl.entryItem = entryItem
         return ctrl
     }
