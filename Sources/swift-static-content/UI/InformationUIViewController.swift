@@ -77,10 +77,12 @@ public class InformationUIViewController: UITableViewController, InformationView
     }
     
     public override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        headerView.textLabel?.textColor = Crayon.secondaryColor
-        headerView.contentView.subviews.forEach { (subview) in
-            guard let label = subview as? UILabel else { return }
-            label.textColor = Crayon.secondaryColor
+        if let headerView = view as? UITableViewHeaderFooterView {
+            headerView.textLabel?.textColor = Crayon.secondaryColor
+            headerView.contentView.subviews.forEach { (subview) in
+                guard let label = subview as? UILabel else { return }
+                label.textColor = Crayon.secondaryColor
+            }
         }
     }
     
